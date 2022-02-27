@@ -4,7 +4,6 @@ We are planning to open our code for the paper: Label Noise Modeling and Correct
 
 The success of deep learning in synthetic aperture radar (SAR) automatic target recognition (ATR) relies on a large number of labeled samples; however, there are often wrong (noisy) labels in a large-scale dataset. In this article, we propose a loss curve-fitting-based method, which can identify the noisy labels and train the classification network effectively. We propose to model label noise by unsupervised clustering via fitting loss curve to identify whether the sample’s label is clean or noisy. Then, we train the network using augmented samples with clean labels to correct noisy labels further. The experiments on the moving and stationary target acquisition and recognition (MSTAR) dataset prove that our proposed method can deal with the situation when training a network with different ratios of noisy labels and correct noisy labels effectively. When the noise ratio is small (40%) in the training dataset, our method can correct 97.9% of noisy labels and train the classification network with 98.8% classification accuracy. While the noise ratio is large (80%), our method can correct 78.1% of noisy labels and train the classification network with 79.6% classification accuracy.
 
-![image](https://github.com/fourk-ty/any_images/blob/main/loss-curve%40per-sample-paper.jpg)
 ![image](https://github.com/fourk-ty/any_images/blob/main/plt_show_correction%40400.jpg)
 
 If the code is helpful, please consider to cite our paper
